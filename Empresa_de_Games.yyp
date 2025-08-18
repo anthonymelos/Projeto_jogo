@@ -1,9 +1,9 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "Jogo-Empresa",
+  "name": "Empresa_de_Games",
   "resources": [
-    {"id":{"name":"spt_quadrado","path":"sprites/spt_quadrado/spt_quadrado.yy",},"order":0,},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
