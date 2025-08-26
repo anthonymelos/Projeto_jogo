@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Jogo-Empresa",
   "resources": [
+    {"id":{"name":"Obj_quadrado","path":"objects/Obj_quadrado/Obj_quadrado.yy",},"order":0,},
     {"id":{"name":"spt_quadrado","path":"sprites/spt_quadrado/spt_quadrado.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
@@ -17,7 +18,7 @@
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
