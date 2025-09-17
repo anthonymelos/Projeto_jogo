@@ -4,9 +4,10 @@
   "name": "Jogo-Empresa",
   "resources": [
     {"id":{"name":"spr_vaca","path":"sprites/spr_vaca/spr_vaca.yy",},"order":1,},
-    {"id":{"name":"Obj_quadrado","path":"objects/Obj_quadrado/Obj_quadrado.yy",},"order":0,},
-    {"id":{"name":"spt_quadrado","path":"sprites/spt_quadrado/spt_quadrado.yy",},"order":0,},
     {"id":{"name":"obj_vaca","path":"objects/obj_vaca/obj_vaca.yy",},"order":1,},
+    {"id":{"name":"obj_bastiao","path":"objects/obj_bastiao/obj_bastiao.yy",},"order":2,},
+    {"id":{"name":"spr_bastiao","path":"sprites/spr_bastiao/spr_bastiao.yy",},"order":3,},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
