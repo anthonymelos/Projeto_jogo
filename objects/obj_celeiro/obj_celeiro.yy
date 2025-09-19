@@ -6,7 +6,7 @@
     "name": "spr_celeiro",
     "path": "sprites/spr_celeiro/spr_celeiro.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_bastiao","path":"objects/obj_bastiao/obj_bastiao.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

@@ -2,4 +2,5 @@
 // Você pode escrever seu código neste editor
 
 
-mov_speed = 2
+
+y = y + mov_speed
