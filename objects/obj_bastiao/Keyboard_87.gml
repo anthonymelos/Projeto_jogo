@@ -3,3 +3,4 @@
 
 y = y - mov_speed
 
+image_angle = 90
