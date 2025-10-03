@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_celeiro",
+  "name": "obj_bastiao_mov_direita",
   "spriteId": {
-    "name": "spr_celeiro",
-    "path": "sprites/spr_celeiro/spr_celeiro.yy",
+    "name": "spr_bastiao_mov_direita",
+    "path": "sprites/spr_bastiao_mov_direita/spr_bastiao_mov_direita.yy",
   },
   "solid": false,
   "visible": true,

@@ -6,7 +6,7 @@
   "volume": 1.0,
   "parentRoom": null,
   "views": [
-    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":640,"hview":480,"xport":0,"yport":0,"wport":640,"hport":480,"hborder":320,"vborder":240,"hspeed":-1,"vspeed":-1,"objectId":{"name":"obj_bastiao","path":"objects/obj_bastiao/obj_bastiao.yy",},},
+    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":640,"hview":480,"xport":0,"yport":0,"wport":640,"hport":480,"hborder":320,"vborder":240,"hspeed":-1,"vspeed":-1,"objectId":{"name":"obj_bastiao_parado_direita","path":"objects/obj_bastiao_parado_direita/obj_bastiao_parado_direita.yy",},},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -19,7 +19,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50D59219","properties":[],"isDnd":false,"objectId":{"name":"obj_vaca","path":"objects/obj_vaca/obj_vaca.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":960.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52D0B083","properties":[],"isDnd":false,"objectId":{"name":"obj_vaca","path":"objects/obj_vaca/obj_vaca.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":320.0,"y":64.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E663B49","properties":[],"isDnd":false,"objectId":{"name":"obj_bastiao","path":"objects/obj_bastiao/obj_bastiao.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_433F130A","properties":[],"isDnd":false,"objectId":{"name":"obj_celeiro","path":"objects/obj_celeiro/obj_celeiro.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.1484375,"scaleY":1.1015625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":297.44543,"y":185.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F4826B","properties":[],"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70E3CE04","properties":[],"isDnd":false,"objectId":{"name":"obj_curral","path":"objects/obj_curral/obj_curral.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":645.0,"y":255.0,},
@@ -32,6 +31,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6CF4CCC4","properties":[],"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_156BD33F","properties":[],"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D238652","properties":[],"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.5,"y":92.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FA96894","properties":[],"isDnd":false,"objectId":{"name":"obj_bastiao_parado_direita","path":"objects/obj_bastiao_parado_direita/obj_bastiao_parado_direita.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":288.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
@@ -41,7 +41,6 @@
   "instanceCreationOrder": [
     {"name":"inst_50D59219","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_52D0B083","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7E663B49","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_433F130A","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1F4826B","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_70E3CE04","path":"rooms/Room1/Room1.yy",},
@@ -54,6 +53,7 @@
     {"name":"inst_6CF4CCC4","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_156BD33F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4D238652","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_FA96894","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
