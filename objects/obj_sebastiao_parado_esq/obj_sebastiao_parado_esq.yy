@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_disparo",
+  "name": "obj_sebastiao_parado_esq",
   "spriteId": {
-    "name": "spr_disparo",
-    "path": "sprites/spr_disparo/spr_disparo.yy",
+    "name": "spr_sebastiao_parado_esq",
+    "path": "sprites/spr_sebastiao_parado_esq/spr_sebastiao_parado_esq.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,9 +24,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
