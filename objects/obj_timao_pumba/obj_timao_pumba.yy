@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_vaca",
+  "name": "obj_timao_pumba",
   "spriteId": {
-    "name": "spr_vaca",
-    "path": "sprites/spr_vaca/spr_vaca.yy",
+    "name": "spr_timao_pumba",
+    "path": "sprites/spr_timao_pumba/spr_timao_pumba.yy",
   },
   "solid": false,
   "visible": true,

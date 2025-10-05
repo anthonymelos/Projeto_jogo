@@ -1,5 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-y = y + 5
+instance_create_layer(x,y, "instances", obj_disparo)
+
 

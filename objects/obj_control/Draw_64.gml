@@ -1,5 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-y = y - 5
+draw_text(350, 830, "Vidas: ")
+
 

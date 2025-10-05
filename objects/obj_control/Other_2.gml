@@ -1,5 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-x = x + 5
+global.vidas = 3
+
+
 

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_vaca",
+  "name": "obj_inimigo",
   "spriteId": {
-    "name": "spr_vaca",
-    "path": "sprites/spr_vaca/spr_vaca.yy",
+    "name": "spr_inimigo",
+    "path": "sprites/spr_inimigo/spr_inimigo.yy",
   },
   "solid": false,
   "visible": true,
