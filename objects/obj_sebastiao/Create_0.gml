@@ -1,23 +1,23 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
 // ===== MOVIMENTO =====
 speed_moviment = 5;
-// Velocidade de movimento do personagem
 
 // ===== DIREÇÃO =====
 ultima_direcao = "direita";
-// Guarda para onde está olhando (para o tiro)
-// Valores possíveis: "direita", "esquerda"
 
 // ===== SISTEMA DE TIRO =====
 pode_atirar = true;
-// Controla se pode disparar (cooldown)
-
 cooldown_tiro = 20;
-// Tempo em frames entre tiros (20 frames = ~0.33 segundos)
-
 timer_cooldown = 0;
-// Contador regressivo do cooldown
 
+// ===== ANIMAÇÃO DE ATIRAR =====
+esta_atirando = false;
+// Flag que indica se está na animação de tiro
+
+timer_animacao_tiro = 0;
+// Contador para duração da animação de tiro
+
+duracao_animacao_tiro = 15;
+// Quantos frames a animação de tiro dura
+// 15 frames = 0.25 segundos (em 60 FPS)
+// Ajuste: 10 = mais rápido, 20 = mais lento
 
