@@ -14,7 +14,7 @@
   "bbox_right": 1919,
   "bbox_top": 0,
   "bbox_bottom": 1079,
-  "HTile": false,
+  "HTile": true,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
