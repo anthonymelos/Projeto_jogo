@@ -1,72 +1,35 @@
 // ===== COLISÃO COM INIMIGO =====
-// Este código executa automaticamente quando obj_disparo
-// colide (toca) em obj_inimigo
 
 if (!ja_acertou) {
-    // ! = NOT (negação)
-    // Se ainda NÃO acertou ninguém
-    // Esta verificação GARANTE que mata apenas 1 inimigo
-    // Mesmo que o tiro atravesse vários inimigos
-    
-    // ===== MARCAR QUE JÁ ACERTOU =====
-    
     ja_acertou = true;
-    // Muda flag para true
-    // Se colidir com um segundo inimigo, não entrará neste if
-    // Resultado: segundo inimigo NÃO morre
     
-    // ===== DESTRUIR O INIMIGO =====
-    
-    // with(objeto/id)
-    // O que é: Executa código NO CONTEXTO de outro objeto
-    // Tudo dentro das chaves {} executa "como se fosse" o outro objeto
-    
-    // other
-    // O que é: Palavra-chave especial do GameMaker
-    // Em eventos de colisão, significa "o outro objeto da colisão"
-    // Aqui: other = o obj_inimigo que colidiu com este tiro
+    // ===== FAZER INIMIGO "MORRER" COM ANIMAÇÃO =====
     
     with(other) {
-        // Agora estamos no contexto do INIMIGO
-        // Tudo aqui executa como se fosse o código do inimigo
+        // other = obj_inimigo que foi atingido
         
-        instance_destroy();
-        // Destrói o INIMIGO (não o tiro)
-        // Porque estamos dentro do with(other)
+        // Troca para sprite de morte
+        sprite_index = spr_alien_morrendo;
         
-        // ===== OPCIONAIS (descomente se quiser usar) =====
+        // Reseta animação para começar do frame 0
+        image_index = 0;
         
-        // Criar efeito visual de explosão:
-        // instance_create_layer(x, y, "Instances", obj_explosao);
-        // Cria objeto de explosão na posição do inimigo
+        // Velocidade da animação de morte
+        image_speed = 1;
+        // 1 = normal, 1.5 = mais rápido, 0.5 = mais lento
         
-        // Tocar som de morte:
-        // audio_play_sound(snd_morte_inimigo, 10, false);
-        // Parâmetros: (som, prioridade, loop)
-        // 10 = prioridade média
-        // false = toca uma vez (não repete)
+        // Marca que está morrendo (para controlar no Step)
+        esta_morrendo = true;
         
-        // Criar partículas de sangue/fumaça:
-        // repeat(5) {
-        //     instance_create_layer(x, y, "Instances", obj_particula);
-        // }
-        // Cria 5 partículas na posição do inimigo
+        // Para o movimento do inimigo (se tiver)
+        speed = 0;
+        hspeed = 0;
+        vspeed = 0;
         
-        // Adicionar pontos:
-        // global.pontos += 10;
-        // Aumenta variável global de pontuação
+        // OPCIONAL: Som de morte
+        // audio_play_sound(snd_morte_alien, 10, false);
     }
     
-    // ===== DESTRUIR O PRÓPRIO TIRO =====
-    
+    // Destrói o tiro
     instance_destroy();
-    // Agora voltamos ao contexto do TIRO (saímos do with)
-    // Destrói o próprio tiro
-    // Não queremos que continue voando depois de matar
 }
-
-// Se ja_acertou == true (já matou alguém):
-// - Não entra no if
-// - Não executa o código dentro
-// - Segundo inimigo NÃO morre
-// - Tiro continua voando até alcance máximo ou sair da tela

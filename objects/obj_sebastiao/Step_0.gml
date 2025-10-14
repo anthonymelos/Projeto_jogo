@@ -6,6 +6,7 @@
 //          clamp(-5, 0, 10) = 0 (não pode ser menor que 0)
 
 x = clamp(x, 15, room_width - 15);
+y = 405
 // Limita posição x entre 15 e (1920-15=1905)
 // Resultado: personagem não sai da tela nas laterais
 // 15 pixels de margem de cada lado
