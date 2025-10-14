@@ -1,6 +1,9 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+
+vida = global.vidas_inimigo;
+
 // ===== CONFIGURAÇÕES DO INIMIGO =====
 
 esta_morrendo = false;

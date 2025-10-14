@@ -1,3 +1,7 @@
+// == VIDA ===
+vida = global.vidas_jogador * 1;
+
+
 // ===== MOVIMENTO =====
 
 speed_moviment = 5;

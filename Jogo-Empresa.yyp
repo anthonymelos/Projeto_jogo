@@ -19,6 +19,7 @@
     {"id":{"name":"spr_fundo_novo","path":"sprites/spr_fundo_novo/spr_fundo_novo.yy",},"order":19,},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},"order":15,},
     {"id":{"name":"obj_arbusto","path":"objects/obj_arbusto/obj_arbusto.yy",},"order":6,},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":18,},
     {"id":{"name":"spr_sebastiao_parado_dir","path":"sprites/spr_sebastiao_parado_dir/spr_sebastiao_parado_dir.yy",},"order":12,},
     {"id":{"name":"spr_arvore","path":"sprites/spr_arvore/spr_arvore.yy",},"order":4,},
     {"id":{"name":"spr_curral","path":"sprites/spr_curral/spr_curral.yy",},"order":3,},
