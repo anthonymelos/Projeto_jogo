@@ -218,3 +218,41 @@ if (keyboard_check_pressed(vk_space) && pode_atirar) {
     // Descomente a linha abaixo se tiver som:
     // audio_play_sound(snd_tiro_espingarda, 10, false);
 }
+
+// ===== SISTEMA DE INVULNERABILIDADE (NOVO) =====
+
+if (invulneravel) {
+    // Se está invulnerável
+    
+    timer_invulnerabilidade -= 1;
+    // Diminui contador a cada frame
+    
+    if (timer_invulnerabilidade <= 0) {
+        // Quando acabar o tempo
+        invulneravel = false;
+        // Volta a ser vulnerável
+    }
+}
+
+// ===== VERIFICAR SE MORREU =====
+
+if (vidas <= 0 && !morreu) {
+    // Se vidas chegou a 0 ou menos E ainda não marcou como morto
+    
+    morreu = true;
+    // Marca que morreu
+    
+    // Desativa controles
+    speed_moviment = 0;
+    pode_atirar = false;
+    
+    // Vai para tela de Game Over depois de 2 segundos
+    alarm[1] = 120;
+    // alarm[1] vai chamar código depois de 120 frames (2 segundos)
+    
+    // OPCIONAL: Som de morte
+    // audio_play_sound(snd_morte_jogador, 10, false);
+    
+    // OPCIONAL: Efeito visual
+    // instance_create_layer(x, y, "Instances", obj_explosao_jogador);
+}

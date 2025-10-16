@@ -1,16 +1,20 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
 // ===== CONFIGURAÇÕES DO INIMIGO =====
 
 esta_morrendo = false;
-// Flag que indica se está na animação de morte
-// false = vivo, true = está morrendo
+// Flag de morte (já tem do código anterior)
 
-// OPCIONAL: Movimento do inimigo
-// Se seu inimigo se move, adicione aqui:
-// velocidade_inimigo = 2;
-// direcao_movimento = 0;
+velocidade_inimigo = 2;
+// Velocidade de movimento
+// AJUSTE: Maior = inimigo mais rápido
 
+// Direção inicial aleatória
+direction = random(360);
+// 0-360 graus (qualquer direção)
 
+// OU direção específica em direção ao jogador:
+// if (instance_exists(obj_sebastiao)) {
+//     direction = point_direction(x, y, obj_sebastiao.x, obj_sebastiao.y);
+// }
 
+speed = velocidade_inimigo;
+// Aplica velocidade na direção definida

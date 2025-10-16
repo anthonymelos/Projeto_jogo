@@ -43,3 +43,29 @@ duracao_animacao_tiro = 20;
 // Quantos frames a animação de tiro dura
 // 15 frames = ~0.25 segundos (em 60 FPS)
 // Ajuste: 10 = mais rápido, 20 = mais lento
+
+vidas = 3;
+// Quantidade de vidas
+// Começa com 3 vidas
+
+vidas_maximas = 3;
+// Máximo de vidas possíveis
+// Útil se quiser power-up que dá vida extra
+
+invulneravel = false;
+// Flag de invulnerabilidade temporária
+// true = não pode tomar dano
+
+tempo_invulnerabilidade = 120;
+// Frames de invulnerabilidade após tomar dano
+// 120 frames = 2 segundos (em 60 FPS)
+
+timer_invulnerabilidade = 0;
+// Contador da invulnerabilidade
+
+morreu = false;
+// Flag se o jogador morreu
+// Usado para controlar transição para Game Over
+
+pontos = 0;
+// Contador de pontos
