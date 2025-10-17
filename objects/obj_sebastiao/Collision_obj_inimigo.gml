@@ -1,53 +1,35 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-
-// ===== COLISÃO COM INIMIGO =====
-// Este código executa quando Bastião toca em um alien
+// ===== COLISÃO DO BASTIÃO COM INIMIGO =====
 
 if (!invulneravel && !morreu) {
-    // Se NÃO está invulnerável E NÃO morreu ainda
+    // Se NÃO está invulnerável E NÃO morreu
     
     // ===== PERDE UMA VIDA =====
     vidas -= 1;
     
-    // Ativa invulnerabilidade temporária
+    // ===== ATIVA INVULNERABILIDADE TEMPORÁRIA =====
     invulneravel = true;
     timer_invulnerabilidade = tempo_invulnerabilidade;
     
-    // ===== FEEDBACK VISUAL/SONORO =====
-    
-    // Som de dano
-    // audio_play_sound(snd_dano, 10, false);
-    
-    // Empurra jogador para trás (knockback)
-    var direcao_empurrao = point_direction(other.x, other.y, x, y);
-    // Calcula direção do inimigo para o jogador
-    // other = obj_inimigo que colidiu
-    
-    // Aplica empurrão
-    hspeed = lengthdir_x(8, direcao_empurrao);
-    vspeed = lengthdir_y(8, direcao_empurrao);
-    // lengthdir_x/y = componentes X e Y de um vetor
-    // 8 = força do empurrão (ajuste conforme necessário)
-    
-    // Cria efeito de dano
-    // instance_create_layer(x, y, "Instances", obj_efeito_dano);
-    
-    // Debug
+    // ===== FEEDBACK =====
     show_debug_message("Tomou dano! Vidas restantes: " + string(vidas));
     
-    // ===== DESTRÓI INIMIGO QUE TOCOU =====
+    // OPCIONAL: Som de dano
+    // audio_play_sound(snd_dano, 10, false);
+    
     with(other) {
-        // other = obj_inimigo
+        // other = obj_inimigo que colidiu com Bastião
         
-        // Animação de morte
-        sprite_index = spr_alien_morrendo;
-        image_index = 0;
-        image_speed = 1;
-        esta_morrendo = true;
-        speed = 0;
+        // ===== CRIA CADÁVER =====
+        instance_create_layer(x, y, "Instances", obj_alien_cadaver);
+        // Cria cadáver na posição do inimigo
+        
+        // ===== DESTRÓI INIMIGO IMEDIATAMENTE =====
+        instance_destroy();
+        // Inimigo some na hora
+        // Só fica cadáver (sem colisão)
     }
 }
 
-
+// IMPORTANTE: Não precisa verificar se inimigo está morrendo
+// porque inimigo é destruído IMEDIATAMENTE
+// Cadáver é objeto diferente (sem colisão com Bastião)

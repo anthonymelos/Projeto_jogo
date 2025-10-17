@@ -1,35 +1,36 @@
-// ===== COLISÃO COM INIMIGO =====
+// ===== COLISÃO DO TIRO COM INIMIGO =====
 
 if (!ja_acertou) {
-    ja_acertou = true;
+    // Se este tiro ainda não matou ninguém
     
-    // ===== FAZER INIMIGO "MORRER" COM ANIMAÇÃO =====
+    ja_acertou = true;
+    // Marca que já matou (mata apenas 1 inimigo)
     
     with(other) {
         // other = obj_inimigo que foi atingido
+        // Código aqui executa no contexto do inimigo
         
-        // Troca para sprite de morte
-        sprite_index = spr_alien_morrendo;
+        // ===== CRIA CADÁVER NA POSIÇÃO DO INIMIGO =====
+        instance_create_layer(x, y, "Instances", obj_alien_cadaver);
+        // Cria obj_alien_cadaver exatamente onde inimigo está
+        // "Instances" = nome da layer (ajuste se diferente)
         
-        // Reseta animação para começar do frame 0
-        image_index = 0;
+        // ===== DESTRÓI INIMIGO IMEDIATAMENTE =====
+        instance_destroy();
+        // Inimigo desaparece na hora
+        // Só fica o cadáver no lugar (que não tem colisão)
         
-        // Velocidade da animação de morte
-        image_speed = 1;
-        // 1 = normal, 1.5 = mais rápido, 0.5 = mais lento
-        
-        // Marca que está morrendo (para controlar no Step)
-        esta_morrendo = true;
-        
-        // Para o movimento do inimigo (se tiver)
-        speed = 0;
-        hspeed = 0;
-        vspeed = 0;
-        
-        // OPCIONAL: Som de morte
-        // audio_play_sound(snd_morte_alien, 10, false);
+        // OPCIONAL: Adicionar pontos
+        // if (instance_exists(obj_sebastiao)) {
+        //     obj_sebastiao.pontos += 10;
+        // }
     }
     
-    // Destrói o tiro
+    // ===== DESTRÓI O TIRO =====
     instance_destroy();
+    // Tiro some após matar inimigo
 }
+
+// IMPORTANTE: Não precisa verificar se inimigo está morrendo
+// porque inimigo é destruído IMEDIATAMENTE
+// Cadáver é objeto diferente (sem colisão com tiro)

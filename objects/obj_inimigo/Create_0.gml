@@ -1,8 +1,5 @@
 // ===== CONFIGURAÇÕES DO INIMIGO =====
 
-esta_morrendo = false;
-// Flag de morte (já tem do código anterior)
-
 velocidade_inimigo = 2;
 // Velocidade de movimento
 // AJUSTE: Maior = inimigo mais rápido

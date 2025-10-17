@@ -24,7 +24,7 @@ draw_set_color(c_white);
 
 // Instruções
 if (pode_reiniciar) {
-    draw_text(320, 250, "Pressione ESPAÇO para Reiniciar");
+    draw_text(320, 250, "Pressione ESPACO para Reiniciar");
     draw_text(320, 280, "Pressione ESC para Sair");
     
     // Pisca texto (efeito)

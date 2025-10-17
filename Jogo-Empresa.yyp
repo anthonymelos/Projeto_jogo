@@ -4,6 +4,7 @@
   "name": "Jogo-Empresa",
   "resources": [
     {"id":{"name":"obj_timao_pumba","path":"objects/obj_timao_pumba/obj_timao_pumba.yy",},"order":14,},
+    {"id":{"name":"obj_alien_cadaver","path":"objects/obj_alien_cadaver/obj_alien_cadaver.yy",},"order":20,},
     {"id":{"name":"spr_vaca","path":"sprites/spr_vaca/spr_vaca.yy",},"order":0,},
     {"id":{"name":"spr_timao_pumba","path":"sprites/spr_timao_pumba/spr_timao_pumba.yy",},"order":14,},
     {"id":{"name":"spr_atirando_esquerda","path":"sprites/spr_atirando_esquerda/spr_atirando_esquerda.yy",},"order":16,},
