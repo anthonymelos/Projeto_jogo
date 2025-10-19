@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-y = 440
+y = 470
 
 // ===== MOVIMENTO DO INIMIGO =====
 
