@@ -34,7 +34,3 @@ if (x < -500 || x > room_width + 500 ||
     instance_destroy();
     // Destrói inimigo (libera memória)
 }
-
-// IMPORTANTE: NÃO TEM MAIS CÓDIGO DE MORTE
-// Morte é gerenciada pelo obj_alien_cadaver
-// Inimigo é sempre destruído imediatamente quando morre

@@ -18,13 +18,11 @@ if (timer > 0) {
 // ===== DETECTAR INPUT PARA AVANÇAR =====
 
 if (pode_avancar) {
-    if (keyboard_check_pressed(vk_space)) {
-        // Espaço pressionado
+    if (keyboard_check_pressed(vk_enter)) {
+        // Destrói este controlador ANTES de trocar room
+        instance_destroy();
         
-        // Vai para próxima room (contextualização)
+        // Vai para próxima room
         room_goto(room_contexto);
-        
-        // OPCIONAL: Som
-        // audio_play_sound(snd_menu_select, 5, false);
     }
 }

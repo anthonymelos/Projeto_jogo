@@ -16,16 +16,5 @@ if (image_index >= image_number - 1) {
     // Cadáver some após animação completa
 }
 
-// ===== OPCIONAL: FADE OUT =====
-// Descomente se quiser que vá sumindo gradualmente
-
-// image_alpha -= 0.02;
-// // Reduz opacidade 2% por frame
-// // Começa em 1.0 (opaco) e vai até 0.0 (invisível)
-
-// if (image_alpha <= 0) {
-//     // Quando ficar totalmente invisível
-//     instance_destroy();
-// }
 
 

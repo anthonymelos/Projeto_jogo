@@ -24,8 +24,6 @@ if (instance_exists(obj_sebastiao)) {
     draw_set_color(c_white);
     draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, true);
     
-    // Texto
-    draw_text(barra_x, barra_y + 25, string(vidas_atual) + " / " + string(vidas_max));
-}
+ }
 
 

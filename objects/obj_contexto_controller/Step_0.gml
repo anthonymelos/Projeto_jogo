@@ -26,7 +26,7 @@ timer_leitura -= 1;
 
 if (timer_leitura <= 0) {
     // Se passou 15 segundos
-    
+    instance_destroy();
     // Vai para room do jogo
     room_goto(Room1);
     // Room1 = nome da sua room de jogo principal
@@ -34,9 +34,9 @@ if (timer_leitura <= 0) {
 
 // ===== AVANÇAR COM ESPAÇO =====
 
-if (pode_pular && keyboard_check_pressed(vk_space)) {
+if (pode_pular && keyboard_check_pressed(vk_enter)) {
     // Se pode pular E apertou espaço
-    
+    instance_destroy();
     // Vai para room do jogo
     room_goto(Room1);
     
