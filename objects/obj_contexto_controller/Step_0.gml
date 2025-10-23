@@ -16,21 +16,6 @@ if (timer_minimo > 0) {
     pode_pular = true;
 }
 
-// ===== TIMER DE LEITURA (15 SEGUNDOS) =====
-
-timer_leitura -= 1;
-// Diminui contador a cada frame
-// 900 → 899 → 898 → ... → 1 → 0
-
-// ===== AVANÇAR AUTOMATICAMENTE =====
-
-if (timer_leitura <= 0) {
-    // Se passou 15 segundos
-    instance_destroy();
-    // Vai para room do jogo
-    room_goto(Room1);
-    // Room1 = nome da sua room de jogo principal
-}
 
 // ===== AVANÇAR COM ESPAÇO =====
 
