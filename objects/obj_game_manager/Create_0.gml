@@ -1,20 +1,17 @@
-// ===== SISTEMA DE PONTUAÇÃO =====
+// ===== SISTEMA DE CONTADOR DE INIMIGOS MORTOS =====
 
-// Inicializa variável global de pontos
-global.pontos = 0;
-// global = variável acessível de qualquer lugar
-// Todos os objetos podem ler/modificar global.pontos
+global.inimigos_mortos = 0;
+// Contador de quantos inimigos foram mortos
 
-// Pontos necessários para boss
-global.pontos_para_boss = 100;
-// Quando chegar a 100, boss aparece
+global.inimigos_para_boss = 50;
+// Precisa matar 50 inimigos para boss aparecer
 
-// Flag se boss já foi invocado
 global.boss_invocado = false;
-// false = ainda não apareceu
-// Evita spawnar boss múltiplas vezes
+// Se boss já foi criado
 
-// ===== PERSISTENT (IMPORTANTE!) =====
+global.boss_morto = false;
+// Se boss foi derrotado
+
+// ===== PERSISTENT =====
 persistent = true;
-// persistent = true faz objeto persistir entre rooms
-// global.pontos será mantido mesmo trocando de room
+// Mantém entre rooms

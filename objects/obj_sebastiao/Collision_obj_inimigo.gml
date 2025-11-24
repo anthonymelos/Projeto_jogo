@@ -11,7 +11,6 @@ if (!invulneravel && !morreu) {
     timer_invulnerabilidade = tempo_invulnerabilidade;
     
     // ===== FEEDBACK =====
-    show_debug_message("Tomou dano! Vidas restantes: " + string(vidas));
     
     // OPCIONAL: Som de dano
     // audio_play_sound(snd_dano, 10, false);

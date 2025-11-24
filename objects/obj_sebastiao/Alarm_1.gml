@@ -1,16 +1,14 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
 // ===== TRANSIÇÃO PARA GAME OVER =====
-// Este código executa 2 segundos depois da morte
 
-// Vai para room de Game Over
+// Reseta contadores ao morrer
+global.inimigos_mortos = 0;
+global.boss_invocado = false;
+global.boss_morto = false;
+
+// Reativa spawner
+if (instance_exists(obj_spawner_inimigos)) {
+    obj_spawner_inimigos.spawner_ativo = true;
+}
+
+// Vai para Game Over
 room_goto(room_game_over);
-// IMPORTANTE: Vamos criar esta room no próximo passo
-
-// ALTERNATIVA: Se não quiser criar room, pode reiniciar:
-// room_restart();
-// Reinicia a room atual (começa do zero)
-
-
-
