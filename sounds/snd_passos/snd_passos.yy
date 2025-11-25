@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_tiro",
+  "name": "snd_passos",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_tiro.mp3",
-  "duration": 1.608,
+  "soundFile": "snd_passos.mp3",
+  "duration": 0.552,
   "parent": {
     "name": "Sons",
     "path": "folders/Sons.yy",

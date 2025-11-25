@@ -22,6 +22,7 @@
     {"id":{"name":"spr_alien_morrendo","path":"sprites/spr_alien_morrendo/spr_alien_morrendo.yy",},"order":18,},
     {"id":{"name":"obj_nave","path":"objects/obj_nave/obj_nave.yy",},"order":24,},
     {"id":{"name":"obj_spawner_inimigos","path":"objects/obj_spawner_inimigos/obj_spawner_inimigos.yy",},"order":17,},
+    {"id":{"name":"snd_passos","path":"sounds/snd_passos/snd_passos.yy",},"order":1,},
     {"id":{"name":"spr_boss_morrendo","path":"sprites/spr_boss_morrendo/spr_boss_morrendo.yy",},"order":24,},
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"order":18,},
     {"id":{"name":"spr_pedra","path":"sprites/spr_pedra/spr_pedra.yy",},"order":5,},
