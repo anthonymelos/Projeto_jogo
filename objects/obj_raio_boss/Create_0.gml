@@ -19,8 +19,7 @@ sprite_index = spr_raios_boss;
 
 image_speed = 0;
 
-image_alpha = 0.5;
-// Começa visível mas transparente
+
 
 image_xscale = 1;
 image_yscale = 1;

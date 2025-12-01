@@ -52,22 +52,6 @@ if (!esta_atirando && !morreu) {
     }
 }
 
-// ===== SOM DE PASSOS =====
-if (movendo && !morreu) {
-    // Toca som de passos a cada X frames
-    if (!variable_instance_exists(id, "timer_passos")) {
-        timer_passos = 0;
-    }
-    
-    timer_passos -= 1;
-    
-    if (timer_passos <= 0) {
-        audio_play_sound(snd_passos, 5, false);
-        timer_passos = 20; // Som a cada 20 frames
-    }
-} else {
-    timer_passos = 0;
-}
 
 // ===== SPRITE DE ATIRAR =====
 if (esta_atirando) {
@@ -108,7 +92,7 @@ if (keyboard_check_pressed(vk_space) && pode_atirar && !morreu) {
     timer_cooldown = cooldown_tiro;
     
     // ===== SOM DE TIRO =====
-    audio_play_sound(snd_tiro, 10, false);
+    audio_play_sound(snd_tiro, 1, false);
     
     // ===== SOM DE RECARREGAR (após um pequeno delay) =====
     alarm[2] = 15; // Toca som de recarregar após 15 frames

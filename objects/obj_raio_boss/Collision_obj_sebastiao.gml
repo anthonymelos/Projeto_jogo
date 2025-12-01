@@ -8,8 +8,6 @@ if (raio_ativo && !other.invulneravel && !other.morreu) {
     other.timer_invulnerabilidade = other.tempo_invulnerabilidade;
     
     
-    // OPCIONAL: Som
-    // audio_play_sound(snd_dano, 10, false);
     
     instance_destroy();
 }

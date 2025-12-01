@@ -12,7 +12,7 @@ if (!raio_ativo) {
     // Cor vermelha durante aviso
     
     if (timer_aviso <= 0) {
-        // Aviso terminou, raio cai!
+     
         raio_ativo = true;
         image_alpha = 1;
         image_blend = c_white;
@@ -21,10 +21,9 @@ if (!raio_ativo) {
         // Ativa colisão
         mask_index = sprite_index;
         
-        show_debug_message("Raio caiu!");
+      
         
-        // OPCIONAL: Som
-        // audio_play_sound(snd_raio_impacto, 10, false);
+    
     }
 }
 

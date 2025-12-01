@@ -13,6 +13,7 @@ switch(estado) {
             timer_preparacao = tempo_preparando_ataque;
             raios_lancados = 0;
             
+           
         }
         break;
     
@@ -32,7 +33,9 @@ switch(estado) {
             
             var raio = instance_create_layer(raio_x, 0, "Instances", obj_raio_boss);
             
-            show_debug_message("Raio criado em X: " + string(raio_x));
+           
+            
+        
             
             raios_lancados += 1;
         }
@@ -42,7 +45,7 @@ switch(estado) {
             timer_parado = tempo_parado;
             raios_lancados = 0;
             
-            show_debug_message("Boss voltou a ficar parado!");
+          
         }
         
         break;
@@ -51,15 +54,15 @@ switch(estado) {
         sprite_index = spr_boss_morrendo;
         invulneravel = true;
         
-        // Verifica se animação terminou
         if (image_index >= image_number - 1) {
             
             global.boss_morto = true;
             
-            // VAI DIRETO PARA ROOM DE VITÓRIA
-            room_goto(room_vitoria);
             
-            // NÃO USA MAIS ALARM - VAI DIRETO!
+            // ===== SOM DE BOSS MORRENDO =====
+            audio_play_sound(snd_boss_morte, 10, false);
+            
+            room_goto(room_vitoria);
         }
         break;
 }
